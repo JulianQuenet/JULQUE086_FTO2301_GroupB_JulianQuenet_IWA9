@@ -32,7 +32,7 @@ const expenses = {
 
 // You can change below however you want
 
-if ((hourOfDay === 00) & (minuteOfDay === 00)) {
+if (hourOfDay === 00 && minuteOfDay === 00) {
   const taxAsDecimal = parseInt(expenses.tax[913]) / 100; //Converts the string to number in order to be /100
   const startingAfterTax = salary - taxAsDecimal * salary;
   const type = `${size}-${lodging}`; //Interpolates the size & lodging with a "-" in-between
@@ -42,6 +42,10 @@ if ((hourOfDay === 00) & (minuteOfDay === 00)) {
 } else {
   console.log("Balances are only calculated at 00.00 (Midnight)");
 }
+
+
+
+
 
 
 
